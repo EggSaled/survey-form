@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Survey Form</title>
+		<link rel='stylesheet' href='styles.css'>
+	</head>
+	<body>
+		<h1 id='title'>Demographic Survey</h1>
+		<p id='description'>Please fill out the following survey below.</p>
+		<div class='container'>
+			<form id='survey-form'>
+				<fieldset>
+					<legend>General Information</legend>
+					<label for='name' id='name-label'>Name: <input type='text' id='name' placeholder='John Doe' required></label>
+					<label for='email' id='email-label'>Email: <input type='email' id='email' placeholder='johndoe@gmail.com' required></label>
+					<label for='number' id='number-label'>Age: <input type='number' id='number' placeholder='21' min='18' max='120'></label>
+					<label for='gender' class='inline'>Gender:</label>
+					<select id='dropdown'>
+						<option>(select one)</option>
+						<option>Male</option>
+						<option>Female</option>
+						<option>Non-Binary</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend>Education</legend>
+					<label for='ged' class='inline'><input type='radio' name='education' id='ged' value='ged'> GED</label>
+					<label for='associates' class='inline'><input type='radio' name='education' id='associates' value='associates'> Associates Degree</label>
+					<label for='bachelors' class='inline'><input type='radio' name='education' id='bachelors' value='bachelors'> Bachelors Degree</label>
+					<label for='masters' class='inline'><input type='radio' name='education' id='masters' value='masters'> Masters Degree</label>
+				</fieldset>
+				<fieldset>
+					<legend>Financial Information</legend>
+					<p>Please indicate which of the following accounts you currently hold.</p>
+					<label for='checking'><input type='checkbox' value='checking' id='checking'> Checking Account</label>
+					<label for='savings'><input type='checkbox' value='savings' id='savings'> Savings Account</label>
+					<label for='certificate'><input type='checkbox' value='certificate' id='certificate'> Certificate Account</label>
+					<label for='moneymarket'><input type='checkbox' value='moneymarket' id='moneymarket'> Money Market Account</label>
+				</fieldset>
+				<label for='comments'>Additional Comments</label>
+				<textarea id='comments'></textarea>
+				<input type='submit' id='submit' value='Submit'>
+			</form>
+		</div>
+	</body>
+</html>
