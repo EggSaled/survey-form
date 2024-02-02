@@ -63,6 +63,7 @@ fieldset:first-of-type{
 }
 fieldset:last-of-type{
 	border-bottom: none;
+	padding-bottom: 15px;
 }
 legend{
 	padding-top: 10px;
